@@ -46,8 +46,14 @@ const Contact = () => {
                 </div>
                 <div>Contact Us</div>
                 <div>+256 777 781 410</div>
-                <div>WhatsApp Us</div>
-                <div>+256 751 892 892</div>
+                <a
+                  href="https://wa.me/256751892892"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <span>WhatsApp +256 751 892 892</span>
+                </a>
               </div>
             </div>
 

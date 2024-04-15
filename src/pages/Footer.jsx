@@ -18,7 +18,14 @@ const Footer = () => {
                   <span> Bombo Kakerenge </span>
 
                   <span> Call +256 777 781 410</span>
-                  <span> WhatsApp +256 751 892 892</span>
+                  <a
+                    href="https://wa.me/256751892892"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>WhatsApp +256 751 892 892</span>
+                  </a>
+
                   <span> kasule616@gmail.com </span>
 
                   {/* <a href="i add some thi">
@@ -104,7 +111,7 @@ const Footer = () => {
                 </a>
               </form> */}
               <button className="navbar-item donateBtn rounded">
-                <Link className="nav-link" to="/donate#donatePage">
+                <Link className="nav-link" to="/donate">
                   Donate
                 </Link>
               </button>
