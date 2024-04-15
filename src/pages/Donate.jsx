@@ -1,3 +1,6 @@
+import { closePaymentModal, FlutterWaveButton } from "flutterwave-react-v3";
+import Logo from "../pages/img/logo.png";
+
 import React from "react";
 import Supportimge1 from "../pages/img/support 1.png";
 import "./Css/Donate.css";
@@ -11,28 +14,91 @@ const donatePage = () => {
       image: Supportimge1,
       title: "Nutrition",
       description:
-        "With your generous donation of $100, you can make a significant impact on the life of a child by ensuring they receive essential necessities, quality education, and healthcare our contribution will go towards providing nutritious meals, ensuring that a child doesn't go hungry during the school term. It will support initiatives that aim to deliver balanced and healthy meals, vital for their physical and cognitive development.",
+        "Our contribution will go towards providing nutritious meals, ensuring that a child doesn't go hungry during the school term. It will support initiatives that aim to deliver balanced and healthy meals, vital for their physical and cognitive development.",
     },
     {
       image: Supportimge2,
       title: "Education",
       description:
-        "Your donation of $100 can be a lifeline for a child's education, opening doors to a world of knowledge, opportunity, and empowerment. By contributing $100, you're providing crucial support for educational initiatives that aim to break barriers and bridge gaps in learning. Your donation will help in providing essential resources such as textbooks, school supplies, and technological tools necessary for effective learning.",
+        " By contributing $100, you're providing crucial support for educational initiatives that aim to break barriers and bridge gaps in learning. Your donation will help in providing essential resources such as textbooks, school supplies, and technological tools .",
     },
     {
       image: Supportimge3,
       title: "Expansion of the school",
       description:
-        " With your generous contribution, we can embark on a journey to expand our school facilities, accommodating more students and providing enhanced learning environments. Your support will enable us to construct additional classrooms, libraries, laboratories, and recreational spaces, ensuring that every child has access to a well-rounded education.",
+        "  Your support will enable us to construct additional classrooms, libraries, laboratories, and recreational spaces, ensuring that every child has access to a well-rounded education.",
     },
   ];
+
+  const config = {
+    public_key: "FLWPUBK_TEST-32193bba8dab84e3d9c4525c85ea7a12-X",
+    tx_ref: Date.now(),
+    amount: 100,
+    currency: "USD",
+    payment_options: "card,mobilemoney,ussd",
+    customer: {
+      email: "moonlandnps@gmail.com ",
+      phone_number: "256 751 892 892",
+      name: "Ssentamu Paul",
+    },
+    customizations: {
+      title: "Donate To Educate The Young Generetion",
+      description: "Moonland Primary School ",
+      logo: Logo,
+    },
+  };
+
+  const fwConfig = {
+    ...config,
+    text: "Donate Now!",
+    callback: (response) => {
+      console.log(response);
+      closePaymentModal(); // this will close the modal programmatically
+    },
+    onClose: () => {},
+  };
 
   return (
     <section
       className="why_section layout_padding text-center pb-5"
       id="donatePage"
     >
-      <section className="donate-section">
+      <div style={{ background: "#362a96" }} className="py-5 text-center">
+        <div className="d-flex justify-content-center">
+          <h1 className="p-3">
+            <a
+              href="#Donate"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Donate
+            </a>
+          </h1>
+        </div>
+      </div>
+
+      <div id="service" className="card-section">
+        <div className="card-container">
+          {data.map((item, index) => (
+            <div key={index} className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  {/* <div className="">
+                    <img src={item.image} alt="" />
+                  </div> */}
+                  <h5 className="align-items-center justify-content-center d-flex px-4 font-weight-bold text-center">
+                    {item.title}
+                  </h5>
+                </div>
+                <div className="flip-card-back">
+                  <p className="  text-white px-3 ">{item.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="donate-section" id="Donate">
         <div className="donate-content text-center">
           <h2>
             {" "}
@@ -42,29 +108,13 @@ const donatePage = () => {
             Your contribution can make a difference in the lives of many. Donate
             now to support our mission.
           </p>
-          <button className="btn donatebtn text-light ">Donate Now</button>
-          <p className="account-number">Account Number: 1325-5041-80239</p>
+          <FlutterWaveButton
+            {...fwConfig}
+            text="Donate Now"
+            className="btn donatebtn text-light"
+          />
         </div>
       </section>
-
-      <div className="container">
-        <div className="heading_container heading_center text-center">
-          <h1>Through the following departments you can support</h1>
-        </div>
-        <div className="why_container pt-3 pb-3 ">
-          {data.map((item, index) => (
-            <div className="box row justify-content-center " key={index}>
-              <div className="img-box  col-6 ">
-                <img src={item.image} alt="" />
-              </div>
-              <div className="detail-box  pb-5 ">
-                <h5>{item.title}</h5>
-                <p>{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 };

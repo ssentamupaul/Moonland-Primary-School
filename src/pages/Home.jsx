@@ -234,12 +234,12 @@ const Home = () => {
 
       {/* Table section */}
       <section id="tableSection">
-        <div style={{ background: "#00bbf0" }} className="py-5 text-center">
+        <div style={{ background: "#362a96" }} className="py-1 text-center">
           <div className="d-flex justify-content-center">
             <h1 className="text-white">More About Moonland Primary School</h1>
           </div>
         </div>
-        <div className="container">
+        <div className="container py-5">
           <table className="table table-bordered table-striped">
             <thead>
               <tr>
