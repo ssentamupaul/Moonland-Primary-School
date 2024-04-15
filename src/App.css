@@ -1,9 +1,8 @@
-
 .navbar {
   background-color: #fff;
   color: #000;
   z-index: 4;
-  
+
 }
 
 .navbar-toggle {
@@ -30,18 +29,20 @@
   }
 
   .navbar-menu {
-    display: flex; /* Change display to flex */
+    display: flex;
+    /* Change display to flex */
     flex-direction: column;
     top: 100%;
     width: 100%;
     background-color: #fff;
-    transition: all 0.3s ease; /* Add transition for smooth animation */
-    max-height: 0; 
-    overflow: hidden; 
+    transition: all 0.3s ease;
+    /* Add transition for smooth animation */
+    max-height: 0;
+    overflow: hidden;
   }
 
   .navbar-menu.open {
-    max-height: 100vh; 
+    max-height: 100vh;
   }
 
   .navbar-item {
@@ -50,10 +51,9 @@
   }
 }
 
-.donateBtn{
+.donateBtn {
   background: #00bbf0;
-  padding: 7px 15px;
+  /* padding: 7px 15px; */
   border: #00bbf0;
   color: #fff;
 }
-
