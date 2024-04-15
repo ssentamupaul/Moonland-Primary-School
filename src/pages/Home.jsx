@@ -1,5 +1,4 @@
 import AOS from "aos";
-import "aos/dist/aos.css";
 import { closePaymentModal, FlutterWaveButton } from "flutterwave-react-v3";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -129,7 +128,7 @@ const Home = () => {
 
       {/* Our services cards section */}
       <section className="service_section layout_padding curved-top">
-        <div className="service_container" data-aos="fade-up">
+        <div className="service_container">
           <div className="container mb-5">
             <div className="heading_container heading_center text-center mt-5">
               <h2>
@@ -144,11 +143,7 @@ const Home = () => {
 
             <div className="row">
               {HomeCarData.map((item, index) => (
-                <div
-                  key={index}
-                  className="col-md-4 col-sm-6"
-                  data-aos="flip-right"
-                >
+                <div key={index} className="col-md-4 col-sm-6">
                   <div className="box">
                     <div className="img-box">
                       <img className="w-100 rounded" src={item.imgSrc} alt="" />
