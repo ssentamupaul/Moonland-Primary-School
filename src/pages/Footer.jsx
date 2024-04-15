@@ -18,7 +18,7 @@ const Footer = () => {
                   <span> Bombo Kakerenge </span>
 
                   <span> Call +256 777 781 410</span>
-
+                  <span> WhatsApp +256 751 892 892</span>
                   <span> kasule616@gmail.com </span>
 
                   {/* <a href="i add some thi">

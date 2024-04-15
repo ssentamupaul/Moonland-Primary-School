@@ -2,6 +2,7 @@ import AOS from "aos";
 import { closePaymentModal, FlutterWaveButton } from "flutterwave-react-v3";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../pages/img/logo.png";
 
 import CardImage1 from "./img/childa.JPG";
 import CardImage2 from "./img/childb.JPG";
@@ -70,26 +71,26 @@ const Home = () => {
   ];
 
   const config = {
-    public_key: "FLWPUBK-**************************-X",
+    public_key: "FLWPUBK_TEST-32193bba8dab84e3d9c4525c85ea7a12-X",
     tx_ref: Date.now(),
     amount: 100,
     currency: "USD",
     payment_options: "card,mobilemoney,ussd",
     customer: {
-      email: "paulossentamu7@gmail.com",
-      phone_number: "0705958204",
+      email: "moonlandnps@gmail.com ",
+      phone_number: "256 751 892 892",
       name: "Ssentamu Paul",
     },
     customizations: {
-      title: "My store",
-      description: "Payment for items in cart",
-      logo: "https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg",
+      title: "Donate To Educate The Young Generetion",
+      description: "Moonland Primary School ",
+      logo: Logo,
     },
   };
 
   const fwConfig = {
     ...config,
-    text: "Pay with Flutterwave!",
+    text: "Donate Now!",
     callback: (response) => {
       console.log(response);
       closePaymentModal(); // this will close the modal programmatically
@@ -220,8 +221,10 @@ const Home = () => {
           </p>
           <FlutterWaveButton
             {...fwConfig}
-            className="btn donatebtn text-light "
+            text="Donate Now"
+            className="btn donatebtn text-light"
           />
+
           {/* <button className="btn donatebtn text-light ">Donate Now</button> */}
           <p className="account-number">
             To help young children acquire quality education

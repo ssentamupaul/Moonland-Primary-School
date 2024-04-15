@@ -1,8 +1,8 @@
 import React from "react";
 
-import contact from "./img/staffa.JPG";
-import { FaLocationDot, FaPhone,  } from "react-icons/fa6";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import contact from "./img/staffa.JPG";
 const Contact = () => {
   return (
     <div className="body">
@@ -46,6 +46,8 @@ const Contact = () => {
                 </div>
                 <div>Contact Us</div>
                 <div>+256 777 781 410</div>
+                <div>WhatsApp Us</div>
+                <div>+256 751 892 892</div>
               </div>
             </div>
 
