@@ -1,0 +1,106 @@
+.why_section .box .img-box {
+                    margin-bottom: 20px;
+                    width: 120px;
+                    height: 120px;
+                    min-width: 120px;
+                    min-height: 120px;
+                    border-radius: 100%;
+                    border: 5px solid #00204a;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+
+}
+
+.why_section .box .img-box img {
+                    width: 55px;
+                    height: auto;
+                    fill: #00204a;
+
+
+}
+
+
+
+
+.why_section .box h5 {
+                    font-weight: bold;
+                    margin-bottom: 10px;
+}
+
+.why_section .box p {
+                    margin-bottom: 0;
+}
+
+.why_section .btn-box {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    margin-top: 45px;
+}
+
+.why_section .btn-box a {
+                    display: inline-block;
+                    padding: 10px 45px;
+                    background-color: #00bbf0;
+                    color: #ffffff;
+                    border-radius: 0;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    border: none;
+}
+
+.why_section .btn-box a:hover {
+                    background-color: #007fa4;
+}
+
+.donate-section {
+                    position: relative;
+                    /* Required for absolute positioning of pseudo-element */
+                    background-image: url('../img/Donate.JPG');
+                    background-size: cover;
+                    background-position: center;
+                    color: white;
+                    padding: 100px 0;
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    /* Adjust as needed */
+}
+
+/* Pseudo-element for overlay */
+.donate-section::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    /* Adjust the opacity (4th value) as needed */
+}
+
+.donate-content {
+                    position: relative;
+                    /* Ensure content stays above the pseudo-element */
+                    z-index: 1;
+                    /* Ensure content stays above the pseudo-element */
+                    max-width: 800px;
+                    margin: 0 auto;
+}
+
+.account-number {
+                    margin-top: 20px;
+}
+
+.donatebtn {
+                    background-color: #00bbf0;
+}
