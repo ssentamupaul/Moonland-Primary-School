@@ -71,14 +71,14 @@ const Home = () => {
   ];
 
   const config = {
-    public_key: "FLWPUBK_TEST-01893805722e5d15cdb627144e7b3499-X",
+    public_key: "FLWPUBK_TEST-a1c29d8087408fa62510daf166e3ae8e-X",
     tx_ref: Date.now(),
-    amount: 100,
+    amount: 50,
     currency: "USD",
     payment_options: "card,mobilemoney,ussd",
     customer: {
-      email: "paul.ssentamu.upti@gmail.com ",
-      phone_number: "256 705958204",
+      email: "kasule616@gmail.com ",
+      phone_number: "256 751 892 892",
       name: "Moonland Primary School",
     },
     customizations: {
