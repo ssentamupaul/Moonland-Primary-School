@@ -31,15 +31,15 @@ const donatePage = () => {
   ];
 
   const config = {
-    public_key: "FLWPUBK_TEST-32193bba8dab84e3d9c4525c85ea7a12-X",
+    public_key: "FLWPUBK_TEST-a1c29d8087408fa62510daf166e3ae8e-X",
     tx_ref: Date.now(),
-    amount: 100,
+    amount: 50,
     currency: "USD",
     payment_options: "card,mobilemoney,ussd",
     customer: {
-      email: "moonlandnps@gmail.com ",
+      email: "kasule616@gmail.com ",
       phone_number: "256 751 892 892",
-      name: "Ssentamu Paul",
+      name: "Moonland Primary School",
     },
     customizations: {
       title: "Donate To Educate The Young Generetion",
