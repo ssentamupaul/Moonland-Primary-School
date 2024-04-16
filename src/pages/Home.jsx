@@ -71,15 +71,15 @@ const Home = () => {
   ];
 
   const config = {
-    public_key: "FLWPUBK_TEST-32193bba8dab84e3d9c4525c85ea7a12-X",
+    public_key: "FLWPUBK_TEST-01893805722e5d15cdb627144e7b3499-X",
     tx_ref: Date.now(),
     amount: 100,
     currency: "USD",
     payment_options: "card,mobilemoney,ussd",
     customer: {
-      email: "moonlandnps@gmail.com ",
-      phone_number: "256 751 892 892",
-      name: "Ssentamu Paul",
+      email: "paul.ssentamu.upti@gmail.com ",
+      phone_number: "256 705958204",
+      name: "Moonland Primary School",
     },
     customizations: {
       title: "Donate To Educate The Young Generetion",
@@ -98,6 +98,31 @@ const Home = () => {
     onClose: () => {},
   };
 
+  const paragraphs = [
+    {
+      text: "Moonland Nursery and Primary School is a beacon of hope nestled in the heart of Uganda. Established in 2018, Moonland has been committed to providing quality education to children from diverse backgrounds, empowering them with knowledge and skills to shape their futures.",
+      image: "/images/image1.jpg", // Image for the first paragraph
+      imagePosition: "left", // Image position for the first paragraph
+    },
+    {
+      text: "Our mission extends beyond academic excellence; we believe in nurturing compassionate and socially responsible individuals. One of our key initiatives is the Sponsorship Program, which offers underprivileged children the opportunity to receive education, nutrition, and healthcare.",
+      image: "/images/image2.jpg", // Image for the second paragraph
+      imagePosition: "right", // Image position for the second paragraph
+    },
+    // Add more paragraphs with images as needed
+    {
+      text: "The Sponsorship Program aims to break the cycle of poverty by providing access to education, which is often out of reach for many families in Uganda. Through the generosity of donors like you, we can offer scholarships to deserving children, giving them a chance for a brighter tomorrow.",
+      image: "/images/image3.jpg", // Image for the third paragraph
+      imagePosition: "left", // Image position for the third paragraph
+    },
+
+    {
+      text: "  Every donation to the Sponsorship Program makes a meaningful impact on  the lives of these children. Your support not only covers school fees  but also provides uniforms, books, and essential supplies, ensuring  that each child can fully participate in their educational journey.",
+      image: "/images/image3.jpg", // Image for the third paragraph
+      imagePosition: "left", // Image position for the third paragraph
+    },
+    // Add more paragraphs with images as needed
+  ];
   return (
     <section id="Home">
       <div className="Landingpage">
@@ -260,6 +285,28 @@ const Home = () => {
           </table>
         </div>
       </section>
+
+      {/* text section */}
+
+      <div className="moonland-primary container">
+        <h2>About Moonland Nursery And Primary School</h2>
+
+        {paragraphs.map((paragraph, index) => (
+          <div
+            key={index}
+            className={`paragraph-container ${
+              paragraph.imagePosition === "left" ? "left-image" : "right-image"
+            }`}
+          >
+            <div className="text-container">
+              <p>{paragraph.text}</p>
+            </div>
+            <div className="image-container">
+              <img src={paragraph.image} alt={`Image ${index}`} />
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
