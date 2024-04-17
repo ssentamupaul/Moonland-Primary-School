@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import teacher from "./img/childc.JPG";
+import teacher from "./img/childc.png";
 import image from "./img/joel.png";
-import AboutUsImage from "./img/topc.JPG";
+import AboutUsImage from "./img/topc.png";
 const AboutUsPage = () => {
   const teamMembers = [
     {

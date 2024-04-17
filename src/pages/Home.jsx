@@ -1,12 +1,12 @@
 import AOS from "aos";
-import { closePaymentModal, FlutterWaveButton } from "flutterwave-react-v3";
+import { FlutterWaveButton } from "flutterwave-react-v3";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../pages/img/logo.png";
 
-import CardImage1 from "./img/childa.JPG";
-import CardImage2 from "./img/childb.JPG";
-import CardImage3 from "./img/childc.JPG";
+import CardImage1 from "./img/childa.png";
+import CardImage2 from "./img/childb.png";
+import CardImage3 from "./img/childc.png";
 
 const Home = () => {
   const [typedText, setTypedText] = useState("");
@@ -73,7 +73,6 @@ const Home = () => {
   const config = {
     public_key: "FLWPUBK_TEST-a1c29d8087408fa62510daf166e3ae8e-X",
     tx_ref: Date.now(),
-    amount: 50,
     currency: "USD",
     payment_options: "card,mobilemoney,ussd",
     customer: {
@@ -82,20 +81,16 @@ const Home = () => {
       name: "Moonland Primary School",
     },
     customizations: {
-      title: "Donate To Educate The Young Generetion",
-      description: "Moonland Primary School ",
+      title: "Donate To Educate The Young Generation",
+      description: "Moonland Primary School",
       logo: Logo,
     },
   };
 
-  const fwConfig = {
-    ...config,
-    text: "Donate Now!",
-    callback: (response) => {
-      console.log(response);
-      closePaymentModal(); // this will close the modal programmatically
-    },
-    onClose: () => {},
+  const [selectedAmount, setSelectedAmount] = useState(0);
+
+  const handleAmountSelection = (amount) => {
+    setSelectedAmount(amount);
   };
 
   return (
@@ -212,27 +207,82 @@ const Home = () => {
       <section className="donate-section">
         <div className="donate-content text-center">
           <h2>
-            {" "}
             Support Our <span className="Us">Cause </span>
           </h2>
           <p>
             Your contribution can make a difference in the lives of many. Donate
             now to support our mission.
           </p>
-          <FlutterWaveButton
-            {...fwConfig}
-            text="Donate Now"
-            className="btn donatebtn text-light"
-          />
+          <h2>Select Donation Amount</h2>
+          <div className="donation-buttons row justify-content-around pb-4">
+            <div className="col-md-2 col-sm-4">
+              {" "}
+              <button
+                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                onClick={() => handleAmountSelection(1)}
+              >
+                Donate $1
+              </button>
+            </div>
 
-          {/* <button className="btn donatebtn text-light ">Donate Now</button> */}
+            <div className="col-md-2 col-sm-4">
+              <button
+                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                onClick={() => handleAmountSelection(50)}
+              >
+                Donate $50
+              </button>
+            </div>
+
+            <div className="col-md-2 col-sm-4">
+              {" "}
+              <button
+                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                onClick={() => handleAmountSelection(70)}
+              >
+                Donate $70
+              </button>
+            </div>
+
+            <div className="col-md-2 col-sm-4">
+              {" "}
+              <button
+                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                onClick={() => handleAmountSelection(90)}
+              >
+                Donate $90
+              </button>
+            </div>
+
+            <div className="col-md-2 col-sm-4  ">
+              {" "}
+              <button
+                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                onClick={() => handleAmountSelection(99)}
+              >
+                Donate $99
+              </button>
+            </div>
+          </div>
+          {selectedAmount > 0 && (
+            <FlutterWaveButton
+              {...config}
+              amount={selectedAmount}
+              text={`Donate $${selectedAmount}`}
+              className="btn donatebtn text-light "
+              callback={(response) => {
+                console.log(response);
+                // You can handle the response here if needed
+              }}
+            />
+          )}
           <p className="account-number">
             To help young children acquire quality education
           </p>
         </div>
       </section>
 
-      {/* Table section */}
+      {/* Table section  */}
       <section id="tableSection">
         <div style={{ background: "#362a96" }} className="py-1 text-center">
           <div className="d-flex justify-content-center">

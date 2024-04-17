@@ -72,7 +72,7 @@
 .donate-section {
                     position: relative;
                     /* Required for absolute positioning of pseudo-element */
-                    background-image: url('../img/Donate.JPG');
+                    background-image: url('../img/Donate.png');
                     background-size: cover;
                     background-position: center;
                     color: white;

@@ -2,28 +2,22 @@ import { closePaymentModal, FlutterWaveButton } from "flutterwave-react-v3";
 import Logo from "../pages/img/logo.png";
 
 import React from "react";
-import Supportimge1 from "../pages/img/support 1.png";
 import "./Css/Donate.css";
-import Supportimge2 from "./img/support2.png";
-import Supportimge3 from "./img/support3.png";
 
 const donatePage = () => {
   // Data stored locally within the component
   const data = [
     {
-      image: Supportimge1,
       title: "Nutrition",
       description:
         "Our contribution will go towards providing nutritious meals, ensuring that a child doesn't go hungry during the school term. It will support initiatives that aim to deliver balanced and healthy meals, vital for their physical and cognitive development.",
     },
     {
-      image: Supportimge2,
       title: "Education",
       description:
         " By contributing $100, you're providing crucial support for educational initiatives that aim to break barriers and bridge gaps in learning. Your donation will help in providing essential resources such as textbooks, school supplies, and technological tools .",
     },
     {
-      image: Supportimge3,
       title: "Expansion of the school",
       description:
         "  Your support will enable us to construct additional classrooms, libraries, laboratories, and recreational spaces, ensuring that every child has access to a well-rounded education.",

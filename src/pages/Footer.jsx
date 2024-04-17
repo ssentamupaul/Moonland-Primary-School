@@ -30,7 +30,7 @@ const Footer = () => {
 
                   {/* <a href="i add some thi">
                     <i className="fa fa-envelope" aria-hidden="true"></i> */}
-                  <span>moonlandnps@gmail.com </span>
+                  <span></span>
                   {/* </a> */}
                 </div>
               </div>

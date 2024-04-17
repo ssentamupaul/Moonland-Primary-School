@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 
-import BabyClassImage1 from "./img/babya.JPG";
-import BabyClassImage2 from "./img/babyb.JPG";
-import BabyClassImage3 from "./img/babyc.JPG";
-import BuildingsImage1 from "./img/buildinga.JPG";
+import BabyClassImage1 from "./img/babya.png";
+import BabyClassImage2 from "./img/babyb.png";
+import BabyClassImage3 from "./img/babyc.png";
+import BuildingsImage1 from "./img/buildinga.png";
 import BuildingsImage2 from "./img/buildingb.JPG";
 import BuildingsImage3 from "./img/buildingc.JPG";
-import pOneClassImage1 from "./img/p1a.JPG";
-import pOneClassImage2 from "./img/p1b.JPG";
-import pOneClassImage3 from "./img/p1c.JPG";
-import sportsImage1 from "./img/sportsa.JPG";
-import sportsImage2 from "./img/sportsb.JPG";
-import sportsImage3 from "./img/sportsc.JPG";
-import staffImage1 from "./img/staffa.JPG";
-import staffImage2 from "./img/staffb.JPG";
-import staffImage3 from "./img/staffc.JPG";
-import TopClassImage1 from "./img/topa.JPG";
-import TopClassImage2 from "./img/topb.JPG";
-import TopClassImage3 from "./img/topc.JPG";
+import pOneClassImage1 from "./img/p1a.png";
+import pOneClassImage2 from "./img/p1b.png";
+import pOneClassImage3 from "./img/p1c.png";
+import sportsImage1 from "./img/sportsa.png";
+import sportsImage2 from "./img/sportsb.png";
+import sportsImage3 from "./img/sportsc.png";
+import staffImage1 from "./img/staffa.png";
+import staffImage2 from "./img/staffb.png";
+import staffImage3 from "./img/staffc.png";
+import TopClassImage1 from "./img/topa.png";
+import TopClassImage2 from "./img/topb.png";
+import TopClassImage3 from "./img/topc.png";
 
 const Portifolia = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

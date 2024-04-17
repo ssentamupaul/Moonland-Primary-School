@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import contact from "./img/staffa.JPG";
+import contact from "./img/staffa.png";
 const Contact = () => {
   return (
     <div className="body">
