@@ -214,11 +214,11 @@ const Home = () => {
             now to support our mission.
           </p>
           <h2>Select Donation Amount</h2>
-          <div className="donation-buttons row justify-content-around pb-4">
+          <div className="donation-buttons row justify-content-around pb-4  pt-3">
             <div className="col-md-2 col-sm-4">
               {" "}
               <button
-                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                className="donation-button btn btn-rounded btn btn-danger mt-3 rounded-pill text-white"
                 onClick={() => handleAmountSelection(1)}
               >
                 Donate $1
@@ -227,7 +227,7 @@ const Home = () => {
 
             <div className="col-md-2 col-sm-4">
               <button
-                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                className="donation-button btn btn-rounded btn btn-danger mt-3 rounded-pill text-white"
                 onClick={() => handleAmountSelection(50)}
               >
                 Donate $50
@@ -237,7 +237,7 @@ const Home = () => {
             <div className="col-md-2 col-sm-4">
               {" "}
               <button
-                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                className="donation-button btn btn-rounded btn btn-danger mt-3 rounded-pill text-white"
                 onClick={() => handleAmountSelection(70)}
               >
                 Donate $70
@@ -247,7 +247,7 @@ const Home = () => {
             <div className="col-md-2 col-sm-4">
               {" "}
               <button
-                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                className="donation-button btn btn-rounded btn btn-danger mt-3 rounded-pill text-white"
                 onClick={() => handleAmountSelection(90)}
               >
                 Donate $90
@@ -257,7 +257,7 @@ const Home = () => {
             <div className="col-md-2 col-sm-4  ">
               {" "}
               <button
-                className="donation-button btn btn-rounded btn btn-danger rounded-pill text-white"
+                className="donation-button btn btn-rounded btn btn-danger mt-3 rounded-pill text-white"
                 onClick={() => handleAmountSelection(99)}
               >
                 Donate $99
