@@ -8,14 +8,14 @@ const config = {
   currency: "USD",
   payment_options: "card,mobilemoney,ussd",
   customer: {
-    email: "kasule616@gmail.com ",
+    email: "moonlandnps@gmail.com ",
     phone_number: "256 751 892 892",
     name: "Moonland Primary School",
   },
   customizations: {
     title: "Donate To Educate The Young Generation",
     description: "Moonland Primary School",
-    logo: Logo,
+    logo: { Logo },
   },
 };
 

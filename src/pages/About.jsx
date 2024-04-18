@@ -1,9 +1,11 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
-import teacher from "./img/childc.png";
+import Map from "./Map";
+import AboutUsImage from "./img/buildinga.png";
 import image from "./img/joel.png";
-import AboutUsImage from "./img/topc.png";
+import image1 from "./img/joel1.png";
+import image2 from "./img/joel2.png";
+import image3 from "./img/joel4.png";
+import teacher from "./img/staffa.png";
 const AboutUsPage = () => {
   const teamMembers = [
     {
@@ -15,21 +17,21 @@ const AboutUsPage = () => {
 
     {
       id: 2,
-      image: image,
+      image: image1,
       name: "Kasule Yeweri",
       position: "Head Teacher",
     },
 
     {
       id: 3,
-      image: image,
+      image: image2,
       name: "Blessing",
       position: "Burser",
     },
 
     {
-      id: 4,
-      image: image,
+      id: 3,
+      image: image3,
       name: "Paul clean Heart",
       position: "Secretary",
     },
@@ -64,7 +66,7 @@ const AboutUsPage = () => {
                 with us. Your small contribution to our school will help us
                 provide quality education to the needy children.
               </p>
-              <Link to="">Read More</Link>
+              <a href="#more">Read More</a>
             </div>
           </div>
         </div>
@@ -100,40 +102,45 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        <div className=" py-5 row justify-content-center align-items-center d-flex ">
-          <div className="col-md-5 col-sm-10">
-            {" "}
-            <h2>
-              Our <span className="Us"> Teaching Staff</span>
-            </h2>
-            <p>
-              Our team of dedicated teachers brings a wealth of experience and
-              expertise to our educational institution. Each member of our
-              faculty is carefully selected not only for their academic
-              qualifications but also for their passion for teaching and
-              nurturing young minds.
-            </p>
-            <p>
-              With years of experience in the field of education, our teachers
-              have honed their skills to create engaging and dynamic learning
-              environments where students thrive. They understand that every
-              child is unique and possesses their own strengths and challenges.
-              As such, they employ diverse teaching methodologies and approaches
-              to cater to the individual needs of each student.
-            </p>
-            <p>
-              Beyond academics, our teachers serve as mentors, guiding students
-              not only in their studies but also in their personal growth and
-              development. They foster a supportive and inclusive classroom
-              atmosphere where students feel empowered to express themselves,
-              ask questions, and explore their interests.
-            </p>
+        <section id="more">
+          <div className=" py-5 row justify-content-center align-items-center d-flex ">
+            <div className="col-md-5 col-sm-10">
+              {" "}
+              <h2>
+                Our <span className="Us"> Teaching Staff</span>
+              </h2>
+              <p>
+                Our team of dedicated teachers brings a wealth of experience and
+                expertise to our educational institution. Each member of our
+                faculty is carefully selected not only for their academic
+                qualifications but also for their passion for teaching and
+                nurturing young minds.
+              </p>
+              <p>
+                With years of experience in the field of education, our teachers
+                have honed their skills to create engaging and dynamic learning
+                environments where students thrive. They understand that every
+                child is unique and possesses their own strengths and
+                challenges. As such, they employ diverse teaching methodologies
+                and approaches to cater to the individual needs of each student.
+              </p>
+              <p>
+                Beyond academics, our teachers serve as mentors, guiding
+                students not only in their studies but also in their personal
+                growth and development. They foster a supportive and inclusive
+                classroom atmosphere where students feel empowered to express
+                themselves, ask questions, and explore their interests.
+              </p>
+            </div>
+            <div className="col-md-5 col-sm-10">
+              <img src={teacher} alt="" className="w-100 rounded" />
+            </div>
           </div>
-          <div className="col-md-5 col-sm-10">
-            <img src={teacher} alt="" className="w-100 rounded" />
-          </div>
-        </div>
+        </section>
       </div>
+
+      {/* Map <section></section> */}
+      <Map />
     </section>
   );
 };

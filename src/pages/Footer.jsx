@@ -123,7 +123,7 @@ const Footer = () => {
       <section className="footer_section">
         <div className="container">
           <p className="text-light">
-            &copy; <span id="displayYear">{currentYear}</span> All Rights
+            &copy; <span id="displayYear">{currentYear}:</span> All Rights
             Reserved By <a href="#Home">Moonland Primary School Kakelenge</a>
           </p>
         </div>
