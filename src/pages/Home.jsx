@@ -88,7 +88,7 @@ const Home = () => {
       <div className="Landingpage">
         <div className="justify-content-center align-items-center text-center">
           <h1 className="hometxt text-light">
-            Welcome To Moonland Nursery And Primary School
+            Welcome To Moonland Primary School
           </h1>
           <h1 className="text-light">
             <h1 className="text-light hometxt2">
