@@ -69,15 +69,17 @@ const Home = () => {
         "Percentage Of Children Who Are Not Able To Pay School Fees And Lunch",
       description: "95%",
     },
+  ];
 
+  const BankDetail = [
     {
-      id: 7,
+      id: 1,
       title: "Account Number",
       description: "132550480239",
     },
 
     {
-      id: 6,
+      id: 2,
       title: "Account Name",
       description: "Moonland Primary school",
     },
@@ -215,6 +217,35 @@ const Home = () => {
             </thead>
             <tbody>
               {tableDatabase.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.id}</td>
+                  <td>{item.title}</td>
+                  <td>{item.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div style={{ background: "#362a96" }} className="py-1 text-center">
+          <div className="d-flex justify-content-center">
+            <h1 className="text-white">Bank Details</h1>
+          </div>
+        </div>
+
+        <div className="container py-5">
+          <table className="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {BankDetail.map((item, index) => (
                 <tr key={index}>
                   <td>{item.id}</td>
                   <td>{item.title}</td>
