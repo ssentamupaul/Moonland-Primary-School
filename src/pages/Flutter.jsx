@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Logo from "../pages/img/logo.png";
 
 const config = {
-  public_key: "FLWPUBK_TEST-a1c29d8087408fa62510daf166e3ae8e-X",
+  public_key: "FLWPUBK-0a376d26869c6465fbf5a9eb15ed8267-X",
   tx_ref: Date.now(),
   currency: "USD",
   payment_options: "card,mobilemoney,ussd",
