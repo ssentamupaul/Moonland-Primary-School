@@ -129,7 +129,7 @@ const AboutUsPage = () => {
           <div className="row">
             {teamMembers.map((member) => (
               <div key={member.id} className="col-lg-3 col-sm-6">
-                <div className="box">
+                <div className="box mt-3">
                   <div className="img-box">
                     <img
                       src={member.image}
