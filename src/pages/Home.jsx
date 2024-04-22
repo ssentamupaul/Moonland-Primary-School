@@ -118,7 +118,7 @@ const Home = () => {
             <div className="row">
               {HomeCarData.map((item, index) => (
                 <div key={index} className="col-md-4 col-sm-6">
-                  <div className="box">
+                  <div className="box mt-3">
                     <div className="img-box">
                       <img className="w-100 rounded" src={item.imgSrc} alt="" />
                     </div>

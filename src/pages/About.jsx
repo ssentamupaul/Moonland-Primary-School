@@ -44,9 +44,9 @@ const AboutUsPage = () => {
     {
       id: 4,
       title: "Religious Character",
-      description: "Christian(Born again",
+      description: "Christian",
     },
-    { id: 5, title: "Number Of Pupils", description: "210" },
+    { id: 5, title: "Number Of Pupils", description: "180" },
     {
       id: 6,
       title:
