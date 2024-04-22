@@ -44,44 +44,31 @@ const Home = () => {
       imgSrc: CardImage2,
       title: "Putting a smile on childrens face",
       description:
-        "We want to make sure that all our children are happy & their embrace what the lord has given. ",
+        "We want to make sure that all our children are happy & their embrace what the lord has given. Due to satsfaction from our services at moonland primary school. ",
     },
     {
       imgSrc: CardImage3,
       title: "Make sure we feed children",
-      description: "Some children cannot acquire quality food.",
+      description:
+        "Some children cannot acquire quality food during school time, and so as moonland we mind so much for the wellbeing of our children by providing to them food.",
     },
   ];
 
-  const tableDatabase = [
-    { id: 1, title: "School Name", description: "Moonland Primary School" },
-    { id: 2, title: "Phase OF Education", description: "Primary" },
-    { id: 3, title: "Gender Of Entry", description: "Mixed" },
+  const data = [
     {
-      id: 4,
-      title: "Religious Character",
-      description: "Christian(Born again",
+      title: "Nutrition",
+      description:
+        "Our contribution will go towards providing nutritious meals, ensuring that a child doesn't go hungry during the school term. It will support initiatives that aim to deliver balanced and healthy meals, vital for their physical and cognitive development.",
     },
-    { id: 5, title: "Number Of Pupils", description: "210" },
     {
-      id: 6,
-      title:
-        "Percentage Of Children Who Are Not Able To Pay School Fees And Lunch",
-      description: "95%",
+      title: "Education",
+      description:
+        " By contributing $100, you're providing crucial support for educational initiatives that aim to break barriers and bridge gaps in learning. Your donation will help in providing essential resources such as textbooks, school supplies, and technological tools .",
     },
-  ];
-
-  const BankDetail = [
     {
-      id: 1,
-      title: "Account Number",
-      description: "132550480239",
-    },
-
-    {
-      id: 2,
-      title: "Account Name",
-      description: "Moonland Primary school",
+      title: "Expansion of the school",
+      description:
+        "  Your support will enable us to construct additional classrooms, libraries, laboratories, and recreational spaces, ensuring that every child has access to a well-rounded education.",
     },
   ];
 
@@ -113,7 +100,6 @@ const Home = () => {
           </Link> */}
         </div>
       </div>
-
       {/* Our services cards section */}
       <section className="service_section layout_padding curved-top">
         <div className="service_container">
@@ -137,8 +123,8 @@ const Home = () => {
                       <img className="w-100 rounded" src={item.imgSrc} alt="" />
                     </div>
                     <div className="detail-box">
-                      <h5>{item.title}</h5>
-                      <p>{item.description}</p>
+                      <h5 className="hidden">{item.title}</h5>
+                      <p className="hidden">{item.description}</p>
                     </div>
                   </div>
                 </div>
@@ -147,9 +133,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Small info to contact us sesction */}
-      <section className="container p-4 mb-3">
+      <section className="container p-4 mb-3" id="tableSection">
         <div className="row py-5 bg-light rounded justify-content-center align-items-center d-flex">
           <div
             style={{ background: "#00bbf0" }}
@@ -176,87 +161,63 @@ const Home = () => {
             }}
             className="col-md-4 col-sm-none p-4 rounded"
           >
-            <div>
+            <div className="align-items-center justify-content-center">
               <h4>For more information </h4>
-              <p>Visit us or Contact us</p>
+              <p>Read more us or Contact us</p>
             </div>
-            <button
-              style={{ background: "#00bbf0", borderColor: "#00bbf0" }}
-              className="btn "
-            >
-              <Link
-                style={{ textDecorationLine: "none", color: "#fff" }}
-                to="/contact"
+            <div className="d-flex gap-3">
+              <button
+                style={{ background: "#00bbf0", borderColor: "#00bbf0" }}
+                className="btn "
               >
-                Contact Us
-              </Link>
-            </button>
+                <Link
+                  style={{ textDecorationLine: "none", color: "#fff" }}
+                  to="/about"
+                >
+                  Read More
+                </Link>
+              </button>
+
+              <button
+                style={{ background: "#00bbf0", borderColor: "#00bbf0" }}
+                className="btn "
+              >
+                <Link
+                  style={{ textDecorationLine: "none", color: "#fff" }}
+                  to="/contact"
+                >
+                  Contact us
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Donate section */}
-
+      {/* text cards Sectio */}
+      <div id="service" className="card-section">
+        <div className="container heading_container heading_center text-center pt-5 ">
+          {" "}
+          <h2>The Following are our Department that still Requires Support</h2>
+        </div>
+        <div className="card-container">
+          {data.map((item, index) => (
+            <div key={index} className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <h5 className="align-items-center justify-content-center d-flex px-4 font-weight-bold text-center">
+                    {item.title}
+                  </h5>
+                </div>
+                <div className="flip-card-back">
+                  <p className="  text-white px-3 ">{item.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <Flutter />
-
-      {/* Table section  */}
-      <section id="tableSection">
-        <div style={{ background: "#362a96" }} className="py-1 text-center">
-          <div className="d-flex justify-content-center">
-            <h1 className="text-white">More About Moonland Primary School</h1>
-          </div>
-        </div>
-        <div className="container py-5">
-          <table className="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tableDatabase.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.id}</td>
-                  <td>{item.title}</td>
-                  <td>{item.description}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section>
-        <div style={{ background: "#362a96" }} className="py-1 text-center">
-          <div className="d-flex justify-content-center">
-            <h1 className="text-white">Bank Details</h1>
-          </div>
-        </div>
-
-        <div className="container py-5">
-          <table className="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {BankDetail.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.id}</td>
-                  <td>{item.title}</td>
-                  <td>{item.description}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
       {/* Maplocation */}
       <Map />
     </section>

@@ -18,24 +18,43 @@ const AboutUsPage = () => {
     {
       id: 2,
       image: image1,
-      name: "Kasule Yeweri",
+      name: "Kemirembe Prossy",
       position: "Head Teacher",
     },
 
     {
       id: 3,
       image: image2,
-      name: "Blessing",
+      name: "Mirembe Aminah",
       position: "Burser",
     },
 
     {
       id: 3,
       image: image3,
-      name: "Paul clean Heart",
+      name: "Night Rebecca",
       position: "Secretary",
     },
   ];
+
+  const tableDatabase = [
+    { id: 1, title: "School Name", description: "Moonland Primary School" },
+    { id: 2, title: "Phase OF Education", description: "Primary" },
+    { id: 3, title: "Gender Of Entry", description: "Mixed" },
+    {
+      id: 4,
+      title: "Religious Character",
+      description: "Christian(Born again",
+    },
+    { id: 5, title: "Number Of Pupils", description: "210" },
+    {
+      id: 6,
+      title:
+        "Percentage Of Children Who Are Not Able To Pay School Fees And Lunch",
+      description: "95%",
+    },
+  ];
+
   return (
     <section className="about_section border-bottom">
       <div className="container">
@@ -54,7 +73,7 @@ const AboutUsPage = () => {
             </div>
           </div>
           <div className="col-md-6 col-sm-12 mb-5">
-            <div className="detail-box">
+            <div className=" text-dark">
               <h3>We Are Moonland Primary School</h3>
               <p>
                 Moonland primary school was established in 2018, with an aim of
@@ -71,6 +90,34 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Table section  */}
+      <section id="tableSection">
+        <div className="d-flex justify-content-center">
+          <h1 className="text-dark">More About Moonland Primary School</h1>
+        </div>
+        <div className="container py-5">
+          <table className="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableDatabase.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.id}</td>
+                  <td>{item.title}</td>
+                  <td>{item.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <div className="container">
         <div className=" py-5 text-center">
           <h2>

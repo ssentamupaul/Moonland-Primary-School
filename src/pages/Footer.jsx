@@ -51,14 +51,10 @@ const Footer = () => {
             </div>
             <div className="col-md-6 col-lg-3 info_col">
               <div className="info_detail">
-                <h4>Info</h4>
-                <p>
-                  Moonland School sponsors children, and we welcome anyone
-                  willing to contribute to our charitable initiatives. Your
-                  support is greatly appreciated as we strive to make a positive
-                  impact on the lives of the children under our care. Join us in
-                  making a difference!"
-                </p>
+                <h4>Bank Details</h4>
+                <p>Bank Name: Opportunity Bank</p>
+                <p> Account Number 13255041802339</p>
+                <p>Account Name: Moonland Primary School</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-2 mx-auto info_col">
@@ -93,13 +89,13 @@ const Footer = () => {
                   >
                     Portifolia
                   </Link>
-                  <Link
+                  {/* <Link
                     style={{ textDecorationLine: "none" }}
                     className=""
                     to="/donate"
                   >
                     Donate
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

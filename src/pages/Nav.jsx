@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Logo from "./img/logo.png";
 import { IoClose } from "react-icons/io5";
 import { RiMenuFoldFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import Logo from "./img/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Navbar = () => {
               Portfolio
             </Link>
           </li>
-         
+
           <button className="navbar-item donateBtn rounded">
             <Link className="nav-link" to="/donate">
               Donate
