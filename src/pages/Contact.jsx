@@ -91,7 +91,7 @@ const Contact = () => {
             <div>
               <h4>No worries</h4>
               <p>
-                Our dedicated team is here to assist you every step of the way.
+                Our dedicated team is here to assist you every step of the way
                 Whether you have questions about our admissions process, want to
                 schedule a campus tour, or simply wish to learn more about what
                 makes our school unique, we're here to help. You can reach us by
