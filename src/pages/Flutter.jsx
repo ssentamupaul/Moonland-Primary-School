@@ -116,7 +116,7 @@ import Logo from "../pages/img/logo.png";
 const config = {
   public_key: "FLWPUBK-0a376d26869c6465fbf5a9eb15ed8267-X",
   tx_ref: Date.now(),
-  currency: "UGX",
+  currency: "USD",
   payment_options: "card,mobilemoney,ussd",
   customer: {
     email: "moonlandnps@gmail.com",

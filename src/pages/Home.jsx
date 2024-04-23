@@ -38,7 +38,7 @@ const Home = () => {
   const HomeCarData = [
     {
       imgSrc: CardImage1,
-      title: "Helping young",
+      title: "Helping the young",
       description:
         "Fact that is some children cannot access education due to uncertainities in life & so we aim at making sure that most of Ugandan children accquire education.",
     },
