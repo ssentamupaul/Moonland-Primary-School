@@ -13,19 +13,19 @@ const Contact = () => {
       </div>
 
       <div className="hero-section pb-5">
-        <div className="mx-5 mb-5">
+        <div className="mb-5">
           <div
             style={{ marginTop: "-4%" }}
             className="row align-items-center justify-content-center gap-5 text-center w-100"
           >
-            <div className="col-lg-3 col-md-3 col-sm-10">
+            <div className="col-xl-2 col-lg-3 col-md-6 col-sm-10">
               <div
                 style={{ background: "#362a96", color: "#fff" }}
                 className="card p-5"
               >
                 <div>
                   <FaLocationDot
-                    style={{ fontSize: "40px" }}
+                    style={{ fontSize: "30px" }}
                     className="contactIcons mb-3"
                   />
                 </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                 <div>Bombo Kakerenge</div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-10">
+            <div className="col-xl-2 col-lg-3 col-md-6 col-sm-10">
               <div
                 style={{ background: "#362a96", color: "#fff" }}
                 className="card p-5"
@@ -46,29 +46,40 @@ const Contact = () => {
                 </div>
                 <div>Contact Us</div>
                 <div>+256 777 781 410</div>
-                <a
-                  href="https://wa.me/256751892892"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <span>WhatsApp +256 751 892 892</span>
-                </a>
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-3 col-sm-10">
+            <div className=" col-xl-2 col-lg-3 col-md-6 col-sm-10">
+              <div
+                style={{ background: "#362a96", color: "#fff" }}
+                className="card p-5"
+              >
+                <div>
+                  <FaPhone
+                    style={{ fontSize: "30px" }}
+                    className="contactIcons mb-3"
+                  />
+                </div>
+                <div>
+                  {" "}
+                  <div>WhatsApp </div>
+                  <div>+256 751 892 892</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-2 col-lg-3 col-md-6 col-sm-10">
               <div
                 style={{ background: "#362a96", color: "#fff" }}
                 className="card p-5"
               >
                 <div>
                   <MdEmail
-                    style={{ fontSize: "40px" }}
+                    style={{ fontSize: "30px" }}
                     className="contactIcons mb-3"
                   />
                 </div>
-                <div>kasule616@gmail.com</div>
+
                 <div>moonlandnps@gmail.com</div>
               </div>
             </div>

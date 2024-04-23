@@ -128,7 +128,7 @@ const AboutUsPage = () => {
         <div className="team_container pb-5">
           <div className="row">
             {teamMembers.map((member) => (
-              <div key={member.id} className="col-lg-3 col-sm-6">
+              <div key={member.id} className="col-lg-3 col-sm-12">
                 <div className="box mt-3">
                   <div className="img-box">
                     <img
@@ -141,7 +141,7 @@ const AboutUsPage = () => {
                     <div>
                       <h5>{member.name}</h5>
                     </div>
-                    <div style={{ marginTop: "-10px" }}>{member.position}</div>
+                    <div style={{ marginTop: "" }}>{member.position}</div>
                   </div>
                 </div>
               </div>

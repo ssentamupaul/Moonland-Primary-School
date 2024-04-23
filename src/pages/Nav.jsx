@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item">
             <Link className="nav-link" to="/portifolio">
-              Portfolio
+              Gallery
             </Link>
           </li>
 

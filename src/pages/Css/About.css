@@ -19,6 +19,8 @@
 
 .about_section .img-box img {
   max-width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .about_section .detail-box h3 {

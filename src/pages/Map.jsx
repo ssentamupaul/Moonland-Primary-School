@@ -5,7 +5,7 @@ const Map = () => {
     <div>
       <div style={{ background: "#00bbf0" }} className="py-5 text-center">
         <div className="d-flex justify-content-center">
-          <h1 className="p-3 text-white">Pay Us A Visit At School</h1>
+          <h1 className="p-3 text-white">Pay us a Visit at School</h1>
         </div>
       </div>
 

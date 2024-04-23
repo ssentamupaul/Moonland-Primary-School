@@ -1,5 +1,4 @@
-
- /* Portifolia.css */
+/* Portifolia.css */
 
 @keyframes shake {
   0% {
@@ -73,41 +72,43 @@
   display: block;
 }
 
-.lists{
-    background-color: #00bbf0;
+.lists {
+  background-color: #00bbf0;
   color: #ffffff;
   border: #00bbf0;
-    list-style: none;
-    padding: 5px 15px;
-    border-radius: 5px;
+  list-style: none;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
-.lists:hover{
-    background-color: #180f4f;
+.lists:hover {
+  background-color: #180f4f;
   color: #ffffff;
   border: #180f4f;
-    list-style: none;
-    padding: 5px 15px;
-    border-radius: 5px;
+  list-style: none;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
+
 .active {
-    background-color: #180f4f;
+  background-color: #180f4f;
   color: #ffffff;
   border: #180f4f;
-    list-style: none;
-    padding: 5px 15px;
-    border-radius: 5px;
+  list-style: none;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
+
 .scroll-container {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: thin;
-    -ms-overflow-style: none;
-   
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+
 }
 
 .scroll-container::-webkit-scrollbar {
-    display: none;
-   
-} 
+  display: none;
+
+}

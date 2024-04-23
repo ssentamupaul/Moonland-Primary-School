@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Flutter from "./Flutter";
 
 import Map from "./Map";
+import Sample from "./img/sample.png";
+import Sample2 from "./img/sample2.png";
 
 import CardImage1 from "./img/childa.png";
 import CardImage2 from "./img/childb.png";
@@ -58,7 +60,7 @@ const Home = () => {
     {
       title: "Nutrition",
       description:
-        "Our contribution will go towards providing nutritious meals, ensuring that a child doesn't go hungry during the school term. It will support initiatives that aim to deliver balanced and healthy meals, vital for their physical and cognitive development.",
+        "Your contribution will go towards providing nutritious meals, ensuring that a child doesn't go hungry during the school term. It will support initiatives that aim to deliver balanced and healthy meals, vital for their physical and cognitive development.",
     },
     {
       title: "Education",
@@ -133,6 +135,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       {/* Small info to contact us sesction */}
       <section className="container p-4 mb-3" id="tableSection">
         <div className="row py-5 bg-light rounded justify-content-center align-items-center d-flex">
@@ -163,7 +166,7 @@ const Home = () => {
           >
             <div className="align-items-center justify-content-center">
               <h4>For more information </h4>
-              <p>Read more us or Contact us</p>
+              <p>Read more or Contact us</p>
             </div>
             <div className="d-flex gap-3">
               <button
@@ -194,11 +197,59 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sample section */}
+      <section className="container ">
+        <div className="row Samplesection mb-5 d-flex justify-content-center align-items-center">
+          <div className="col-lg-6 SampleImage">
+            <img className="w-100 " src={Sample2} alt="" />{" "}
+          </div>
+          <div className="col-lg-6 Sampletext  px-5  ">
+            <h2> Empowering Potential:</h2>
+            <p>
+              Moonland Primary School stands as a beacon of hope in the heart of
+              Africa, where the bright minds of countless children are nurtured
+              and empowered to reach their full potential. Despite facing the
+              harsh reality of limited access to education due to financial
+              constraints, many African children possess remarkable talents and
+              intelligence waiting to be unleashed. <br /> Tragically, some of
+              these promising young minds find themselves on the streets,
+              deprived of the opportunity to learn and excel. Moonland Primary
+              School recognizes this injustice and has made it their mission to
+              intervene, offering education and support to those who need it
+              most.
+            </p>
+          </div>
+        </div>
+
+        <div className="row Samplesection mb-5 d-flex justify-content-center align-items-center">
+          <div className="col-lg-6 Sampletext  px-5 ">
+            <h2>Join Us in Empowering Every Child at Moonland:</h2>
+            <p>
+              At Moonland, every child is welcomed with open arms, regardless of
+              their background or circumstances. The school's dedicated teachers
+              and staff work tirelessly to provide a safe and nurturing
+              environment where children can thrive academically, emotionally,
+              and socially. However, Moonland cannot fulfill its mission alone.{" "}
+              <br />
+              The school extends a heartfelt invitation to anyone willing to
+              stand with them in this noble journey of empowerment. Together, we
+              can break down the barriers that hold back these bright young
+              minds and pave the way for a brighter future for all.
+            </p>
+          </div>
+          <div className="col-lg-6 SampleImage">
+            <img className="w-100 " src={Sample} alt="" />{" "}
+          </div>
+        </div>
+      </section>
+
       {/* text cards Sectio */}
       <div id="service" className="card-section">
         <div className="container heading_container heading_center text-center pt-5 ">
           {" "}
-          <h2>The Following are our Department that still Requires Support</h2>
+          <h2>
+            The Following are our Department that still Require your Support
+          </h2>
         </div>
         <div className="card-container">
           {data.map((item, index) => (
